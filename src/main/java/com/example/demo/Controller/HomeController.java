@@ -30,17 +30,17 @@ public class HomeController {
 	        return "index";
 	}
 	
-	@GetMapping("/LeftSide")
+	@GetMapping("/SelfIntroduction")
 	public String LeftSide( Model model) {
 	     	
 	        return "left-sidebar";
 	}
-	@GetMapping("/RightSide")
+	@GetMapping("/autobiography")
 	public String RightSide( Model model) {
 	     	
 	        return "right-sidebar";
 	}
-	@GetMapping("/NoSide")
+	@GetMapping("/workexperience")
 	public String NoSide( Model model) {
 	     	
 	        return "no-sidebar";
