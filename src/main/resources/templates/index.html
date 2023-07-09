@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
-      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<html  xmlns:th="https://www.thymeleaf.org" th:with="lang=${#locale.language}" th:lang="${lang}"
+  >
 	<head>
 		<title>星空宇宙</title>
 		<meta charset="utf-8" />
@@ -19,7 +19,7 @@
 					<!-- Inner -->
 						<div class="inner">
 							<header>
-								<h1><a href="index.html" id="logo">星空宇宙</a></h1>
+								<h1><a href="index.html" id="logo" >星空宇宙</a></h1>
 								<hr />
 								<p>歡迎探索名為<strong>星空</strong>的宇宙</p>
 							</header>

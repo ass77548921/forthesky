@@ -1,13 +1,11 @@
 <nav id="nav" th:fragment="nav">
 							<ul>
-								<li><a href="/">首頁</a></li>
+								<li><a href="/"><p th:text="#{homePage.home}"></p></a></li>
 								
-								<li><a href="./SelfIntroduction">自我介紹</a></li>
-								<li><a href="./autobiography">自傳</a></li>
-								<li><a href="./workexperience">工作經歷</a></li>
+								<li><a href="./SelfIntroduction" th:text="#{homePage.introduce}"></a></li>
 								
 								<li>
-									<a href="#">作品集</a>
+									<a href="#" th:text="#{homePage.work}"></a>
 									<ul>
 										<li><a href="http://forthesky.ddns.net:3000/api">nodejs</a></li>
 										<li><a href="#">Magna phasellus</a></li>
@@ -24,6 +22,7 @@
 										<li><a href="#">Veroeros feugiat</a></li>
 									</ul>
 								</li>
-								<li><a href="./workexperience">英文版</a></li>
+								<li><a href="?lang=en_US" th:text="#{homePage.english}">英文版</a></li>
+								<li><a href="?lang=zh_TW" th:text="#{homePage.chinese}">中文版</a></li>
 							</ul>
 						</nav>
