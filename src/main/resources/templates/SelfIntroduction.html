@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+	<head th:replace="tab/head::head"></head>
+	<body class="left-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="index.html" id="logo" th:text="#{title}"></a></h1>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						<nav th:replace="tab/nav::nav"></nav>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-4 col-12-mobile" id="sidebar">
+								<hr class="first" />
+								<section>
+									<header>
+									<img style="width: 274px;" th:src="@{/image/1.jpg}">
+										<h3><a href="#">基本資料</a></h3>
+									</header>
+									<p>姓名:劉又豪</p>
+									<p>性別:男</p>
+									
+									<p>年齡:22歲</p>
+									<p>兵役狀態:免役</p>
+									<p>聯絡電話:0980543219 | (02)23026330</p>
+									<p>電子郵件:a.smart.andrew@gmail.com</p>
+									<p>持有駕照:普通重型機車(自備)</p>
+									
+									
+								</section>
+								<hr />
+								<section>
+									<header>
+										<h3><a href="#">學歷</a></h3>
+									</header>
+									<div class="row gtr-50">
+									
+										<div class="col-12">
+											<h4>大學</h4>
+											<p>
+												淡江大學資訊工程學系(畢業)
+											</p>
+										</div>
+										
+										<div class="col-12">
+											<h4>高中</h4>
+											<p>
+												成淵高中普通科(畢業)
+											</p>
+										</div>
+									
+										
+									</div>
+								</section>
+								<hr />
+								<section>
+									<header>
+										<h3><a href="#">工作與社團經歷</a></h3>
+									</header>
+									<div class="row gtr-50">
+									
+										<div class="col-12">
+											<h4>神通資訊科技</h4>
+											<p>
+												職位:應用工程部|助理工程師
+											</p>
+											<p>
+												就職時間:2022/7/1-2023/6/30
+											</p>
+										</div>
+										
+										<div class="col-12">
+											<h4>淡江電腦維修服務隊</h4>
+											<p>
+												職位:隊員(電腦維修)
+											</p>
+											<p>
+												就職時間:2020/9/1-2022/6/1
+											</p>
+										</div>
+										
+											<div class="col-12">
+											<h4>淡江電腦硬體研究社</h4>
+											<p>
+												職位:教學長
+											</p>
+											<p>
+												任職時長:1年
+											</p>
+										</div>
+									
+										
+									</div>
+								</section>
+							</div>
+							<div class="col-8 col-12-mobile imp-mobile" id="content">
+								<article id="main">
+									<header>
+										<h2><a href="#">自我介紹</a></h2>
+									</header>
+									<p>
+										我是一名淡江大學資訊工程系畢業的學生，對於電腦科技充滿熱情。透過我的自學與實習經驗，我堅信軟體設計是一項具有無限可能性的技能，能夠改變現有的產業架構，創造出更暢銷、高效的產品。
+									</p>
+									<p>我的經驗並非全部都由學校課程所學而來，而是部分來自於自己的探索與實際應用。透過解決挑戰性的問題，我提升了自己的解決問題能力與耐性。在神通資訊科技股份有限公司的實習中，我負責了軟體設計工程師相關的工作，在這期間裡，我學習了如何與團隊成員合作，以及如何協調各種工作流程。</p>
+									<p>除此之外，我也在學校裡擔任了社團的教學長，與我的社團幹部們共同進行討論、安排課程的內容與時程，透過幹部們之間的溝通，我學習了如何與人相處、如何在壓力下保持冷靜、如何在極短時間內做出最佳決策。</p>
+									<p>我希望能夠在未來的職場上，應用自己所學，繼續鑽研軟體相關的技能，並與更多人合作，共同解決更困難的問題。我相信，每個人都有自己的擅長領域，我希望能夠在這個領域裡盡情發揮自己的專長，讓自己在職場上得到更多肯定，並讓一切的努力都有所收穫。</p>
+									
+								</article>
+							</div>
+						</div>
+						
+					</div>
+
+				</div>
+
+			<div th:replace="tab/Feature::Feature"></div>
+
+		</div>
+
+		<div th:replace="fragment/script::script">
+		
+		</div>
+			
+
+	</body>
+</html>

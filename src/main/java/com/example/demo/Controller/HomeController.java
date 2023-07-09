@@ -31,9 +31,9 @@ public class HomeController {
 	}
 	
 	@GetMapping("/SelfIntroduction")
-	public String LeftSide( Model model) {
+	public String SelfIntroduction( Model model) {
 	     	
-	        return "left-sidebar";
+	        return "SelfIntroduction";
 	}
 	@GetMapping("/autobiography")
 	public String RightSide( Model model) {
