@@ -1,14 +1,14 @@
 <nav id="nav" th:fragment="nav">
 							<ul>
-								<li><a href="/"><p th:text="#{homePage.home}"></p></a></li>
-								
+								<li><a href="./"><p th:text="#{homePage.home}"></p></a></li>
+
 								<li><a href="./SelfIntroduction" th:text="#{homePage.introduce}"></a></li>
 								
 								<li>
 									<a href="#" th:text="#{homePage.work}"></a>
 									<ul>
-										<li><a href="http://forthesky.ddns.net:3000/api">nodejs</a></li>
-										
+										<li><a th:href="@{../api}">nodejs</a></li>
+										<li><a th:href="@{../billboard/home}">公佈欄</a></li>
 										
 										
 									</ul>
